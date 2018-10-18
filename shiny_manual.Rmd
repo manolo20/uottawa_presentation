@@ -1,0 +1,106 @@
+---
+title: "How to use Shiny"
+author: "Manolo Malaver-Vojvodic"
+date: "October 16, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## What is shiny?
+
+"shiny" is a package used to create interactive dashboards without the necessity to know any HTML, CSS or JavaScript.
+
+It was developed by Joe Cheng from RStudio.
+
+Some of the benefits of using shiny are:
+1) Interactivity.
+2) Easy to share.
+3) Relatively easy to develop (compared to other programing languages). 
+4) Open source library. (RStudio, stackoverflow, github)
+
+## Installing shiny
+
+To install shiny we run:
+
+```{r, eval=FALSE}
+install.packages("shiny")
+```
+
+and then we load the library:
+
+```{r, eval=FALSE}
+library("shiny")
+```
+
+## Structure
+
+A folder contating a basic shiny application is composed in two different ways:
+
+1) A folder that contains a file named myapp.R which includes the ui and server functions:
+
+```
+myapp
+│   app.R
+└───data
+│   └───data.csv
+└───images
+    └───image.jpg
+```
+
+2) A folder that includes a ui.R and a server.R files:
+
+```
+myapp
+│   ui.R
+│   server.R  
+└───data
+│   └───data.csv
+└───images
+    └───image.jpg
+```
+
+## What is a ui?
+
+
+
+The ui stands for **user interface** and it is the skeleton or layout of an application, for example, where a dropdown menu should be located, or which options a radio button menu should have, or the range of a slidebar. The ui is written using shiny functions and its output is raw HTML code.
+
+The server is a function that allows users interact with the application by selecting specific options of the ui in order to obtain different results which can be in the form of plots, datasets, mathematical calculations, words, images. 
+
+The UI is responsible for creating specific controls that a user can iteract with, while the server is translating the specific options selected in the ui into an actual plot or data.
+
+
+## Examples
+
+Now let's explore some of the examples that one can create using shiny:
+
+```{r, eval=FALSE}
+library(shiny)
+runExample("01_hello")
+runExample("03_reactivity")
+runExample("05_sliders")
+runExample("09_upload")
+```
+
+## Creating a shiny application
+
+
+## Deployment
+- shinyapps.io
+- Ocean Digital
+- Amazon Web Services
+- Microsoft Azure
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,0 +1,19 @@
+]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ [K]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git init [K.[K .
+Initialized empty Git repository in /home/atai/RStudio/uottawa/shinypresentation/.git/
+]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+	[31m.Rhistory[m
+	[31m.Rproj.user/[m
+	[31mshiny.Rproj[m
+	[31mshiny1.R[m
+	[31mshiny2.R[m
+	[31mshiny3.R[m
+	[31mshiny_manual.Rmd[m
+	[31mshiny_manual.html[m
+
+nothing added to commit but untracked files present
+]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git add .
