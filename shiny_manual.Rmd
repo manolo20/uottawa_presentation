@@ -117,6 +117,8 @@ Steps:
 
 We will create a dashboard that visualizes GDP figures at the national level for all published NAICS (North American Industry Classification) industries.
 
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043403
+
 ## 2) Getting the data:
 
 ```{r, eval=FALSE}
