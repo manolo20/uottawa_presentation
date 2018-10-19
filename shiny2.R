@@ -9,16 +9,16 @@ library(plotly)
 
 # 36-10-0434-03
 # Gross domestic product (GDP) at basic prices, by industry, annual average (x 1,000,000)
-table04 <- getCANSIM(36100434, raw=TRUE)
-head(table04)
+gdp_raw <- getCANSIM(36100434, raw=TRUE)
+head(gdp_raw)
 
-unique(table04$Seasonal.adjustment)
+unique(gdp_raw$Seasonal.adjustment)
 
-unique(table04$Prices)
-unique(table04$GEO)
+unique(gdp_raw$Prices)
+unique(gdp_raw$GEO)
 
-gdp <- table04 %>% filter(Seasonal.adjustment %in% "Seasonally adjusted at annual rates")%>%
-  select("time"="X.U.FEFF.REF_DATE", "naics"="North.American.Industry.Classification.System..NAICS.", "value"="VALUE", "prices"="Prices") 
+gdp <- gdp_raw %>% filter(Seasonal.adjustment %in% "Seasonally adjusted at annual rates")%>%
+  select("time"="REF_DATE", "naics"="North.American.Industry.Classification.System..NAICS.", "value"="VALUE", "prices"="Prices") 
 
 gdp$time1<-as.Date(paste((gdp$time), "-01", sep=""))
 

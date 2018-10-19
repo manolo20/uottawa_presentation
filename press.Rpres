@@ -1,0 +1,33 @@
+press
+========================================================
+author: Manolo Malaver-Vojvodic
+date: 
+autosize: true
+
+What is shiny?
+========================================================
+
+"shiny" <img src="images/shiny-hex.png" height="100px" width="100px" /> is a package used to create interactive dashboards without the necessity to know any HTML, CSS or JavaScript.
+
+It was developed by Joe Cheng from RStudio.
+
+Some of the benefits of using shiny are:
+
+1. Interactivity.
+2. Easy to share.
+3. Relatively easy to develop (compared to other programing languages). 
+4. Open source library. (RStudio, stackoverflow, github)
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```

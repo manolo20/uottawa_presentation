@@ -22,7 +22,7 @@ unique(gdp_raw$GEO)
 
 gdp <- gdp_raw %>% 
   filter(Seasonal.adjustment %in% "Seasonally adjusted at annual rates")%>%
-  select("time"="X.U.FEFF.REF_DATE", "naics"="North.American.Industry.Classification.System..NAICS.", "value"="VALUE", "prices"="Prices") 
+  select("time"="REF_DATE", "naics"="North.American.Industry.Classification.System..NAICS.", "value"="VALUE", "prices"="Prices") 
 
 gdp$time1<-as.Date(paste((gdp$time), "-01", sep=""))
 gdp$time1<-as.Date(gdp$time1)
