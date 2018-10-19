@@ -11,22 +11,28 @@ library(plotly)
 # Gross domestic product (GDP) at basic prices, by industry, annual average (x 1,000,000)
 gdp_raw <- getCANSIM(36100434, raw=TRUE)
 
-# I print
+# Print the first rows of the dataset
 head(gdp_raw)
 
-
-
+# Verify how many unique variables exist in a given colum name 
 unique(gdp_raw$Seasonal.adjustment)
 unique(gdp_raw$Prices)
 unique(gdp_raw$GEO)
 
+# Cleaning the data:
 gdp <- gdp_raw %>% 
   filter(Seasonal.adjustment %in% "Seasonally adjusted at annual rates")%>%
-  select("time"="REF_DATE", "naics"="North.American.Industry.Classification.System..NAICS.", "value"="VALUE", "prices"="Prices") 
+  select("time"="REF_DATE", 
+         "naics"="North.American.Industry.Classification.System..NAICS.", 
+         "value"="VALUE", 
+         "prices"="Prices") 
 
+# Creating a new column time1 which will be a "date" object.
 gdp$time1<-as.Date(paste((gdp$time), "-01", sep=""))
+
 gdp$time1<-as.Date(gdp$time1)
 
+head(gdp)
 
 
 # Define UI for app that draws a histogram ----
