@@ -1,7 +1,9 @@
 ---
 title: "How to use Shiny?"
-author: "Manolo Malaver-Vojvodic"
-date: 'https://twitter.com/mmala0'
+author: 
+- "Manolo Malaver-Vojvodic"
+- 'https://twitter.com/mmala0'
+- "https://github.com/manolo20/"
 output:
   html_document: default
   pdf_document: default
