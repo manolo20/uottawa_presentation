@@ -1,54 +1,0 @@
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ [K]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git init [K.[K .
-Initialized empty Git repository in /home/atai/RStudio/uottawa/shinypresentation/.git/
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git commit -m "first commit"
-On branch master
-
-Initial commit
-
-Untracked files:
-	[31m.Rhistory[m
-	[31m.Rproj.user/[m
-	[31mshiny.Rproj[m
-	[31mshiny1.R[m
-	[31mshiny2.R[m
-	[31mshiny3.R[m
-	[31mshiny_manual.Rmd[m
-	[31mshiny_manual.html[m
-
-nothing added to commit but untracked files present
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git add .
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git add .commit -m "first commit"
-[master (root-commit) bd5613b] first commit
- 12 files changed, 1272 insertions(+)
- create mode 100644 .Rhistory
- create mode 100644 .Rproj.user/44EBE94B/console06/AE489B8B
- create mode 100644 .Rproj.user/44EBE94B/console06/AE489B8B.env
- create mode 100644 .Rproj.user/44EBE94B/console06/INDEX001
- create mode 100644 .Rproj.user/44EBE94B/sources/s-17CDF6C7/lock_file
- create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
- create mode 100644 shiny.Rproj
- create mode 100644 shiny1.R
- create mode 100644 shiny2.R
- create mode 100644 shiny3.R
- create mode 100644 shiny_manual.Rmd
- create mode 100644 shiny_manual.html
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git remote add origin https://github.com/manolo20/uottawa_presentation.git
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ git push -u origin master
-fatal: cannot run rpostback-askpass: No such file or directory
-Username for 'https://github.com': manolo20
-fatal: cannot run rpostback-askpass: No such file or directory
-Password for 'https://manolo20@github.com': 
-Counting objects: 20, done.
-Delta compression using up to 4 threads.
-Compressing objects:   6% (1/15)   Compressing objects:  13% (2/15)   Compressing objects:  20% (3/15)   Compressing objects:  26% (4/15)   Compressing objects:  33% (5/15)   Compressing objects:  40% (6/15)   Compressing objects:  46% (7/15)   Compressing objects:  53% (8/15)   Compressing objects:  60% (9/15)   Compressing objects:  66% (10/15)   Compressing objects:  73% (11/15)   Compressing objects:  80% (12/15)   Compressing objects:  86% (13/15)   Compressing objects:  93% (14/15)   Compressing objects: 100% (15/15)   Compressing objects: 100% (15/15), done.
-Writing objects:   5% (1/20)   Writing objects:  10% (2/20)   Writing objects:  15% (3/20)   Writing objects:  20% (4/20)   Writing objects:  25% (5/20)   Writing objects:  30% (6/20)   Writing objects:  35% (7/20)   Writing objects:  40% (8/20)   Writing objects:  45% (9/20)   Writing objects:  50% (10/20)   Writing objects:  55% (11/20)   Writing objects:  60% (12/20)   Writing objects:  65% (13/20)   Writing objects:  70% (14/20)   Writing objects:  75% (15/20)   Writing objects:  90% (18/20)   Writing objects:  95% (19/20)   Writing objects: 100% (20/20)   Writing objects: 100% (20/20), 250.54 KiB | 5.22 MiB/s, done.
-Total 20 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), done.[K
-remote: 
-remote: Create a pull request for 'master' on GitHub by visiting:[K
-remote:      https://github.com/manolo20/uottawa_presentation/pull/new/master[K
-remote: 
-To https://github.com/manolo20/uottawa_presentation.git
- * [new branch]      master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-]0;/home/atai/RStudio/uottawa/shinypresentation]0;manolo@manolo: ~/RStudio/uottawa/shinypresentation[01;32mmanolo@manolo[00m:[01;34m~/RStudio/uottawa/shinypresentation[00m$ 
