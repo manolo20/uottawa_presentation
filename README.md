@@ -5,6 +5,10 @@
 <img align="right" img src="images/stc.png" markdown="1" height="30" width="220" />
 
 <br />
+<br />
+<br />
+<br />
+<br />
 
 Please refer to this [link](https://manolo20.github.io/uottawa_presentation/shiny_manual.html) to see the presentation.
 
