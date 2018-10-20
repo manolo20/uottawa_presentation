@@ -1,7 +1,8 @@
 # CANDEV – Data Challenge - Workshop: How to use shiny to create an interactive dashboard?
 
-<img src="/images/uottawak.png" width="100" height="100" />
-<img src="/images/Canada.png" width="100" height="100" />
+<img src="/images/uottawak.png" width="80" height="80" />
+
+<img src="images/stc.png" style="float:right" markdown="1" height="80" width="80" />
 
 Please refer to this [link](https://manolo20.github.io/uottawa_presentation/shiny_manual.html) to see the presentation.
 
