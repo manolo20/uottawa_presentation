@@ -399,14 +399,14 @@ runExample(&quot;09_upload&quot;)</code></pre>
 <div id="idea" class="section level2">
 <h2>1) Idea:</h2>
 <p>We will create a dashboard that visualizes GDP figures at the national level for all published NAICS (North American Industry Classification) industries.</p>
-<p><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043403" class="uri">https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043403</a></p>
+<p><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401" class="uri">https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401</a></p>
 </div>
 <div id="getting-the-data" class="section level2">
 <h2>2) Getting the data:</h2>
 <pre class="r"><code>library(CANSIM2R)
 
-# We will get Table 36-10-0434-03: 
-# Gross domestic product (GDP) at basic prices, by industry, annual average (x 1,000,000)
+# We will download Table 36-10-0434-01:
+# Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
 # From Statistics Canada
 
 gdp_raw &lt;- getCANSIM(36100434, raw=TRUE)</code></pre>

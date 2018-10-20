@@ -7,8 +7,10 @@ library(ggplot2)
 library(plotly)
 # install.packages("CANSIM2R")
 
-# 36-10-0434-03
-# Gross domestic product (GDP) at basic prices, by industry, annual average (x 1,000,000)
+# We will download Table 36-10-0434-01: 
+# Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
+# From Statistics Canada
+
 gdp_raw <- getCANSIM(36100434, raw=TRUE)
 
 # Print the first rows of the dataset

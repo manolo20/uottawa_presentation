@@ -119,7 +119,9 @@ Steps:
 
 We will create a dashboard that visualizes GDP figures at the national level for all published NAICS (North American Industry Classification) industries.
 
-https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043403
+Table 3610043401:
+Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401
 
 ## 2) Getting the data:
 
@@ -127,8 +129,8 @@ https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043403
 
 library(CANSIM2R)
 
-# We will get Table 36-10-0434-03: 
-# Gross domestic product (GDP) at basic prices, by industry, annual average (x 1,000,000)
+# We will download Table 36-10-0434-01:
+# Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
 # From Statistics Canada
 
 gdp_raw <- getCANSIM(36100434, raw=TRUE)
