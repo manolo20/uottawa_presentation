@@ -10,7 +10,10 @@
 <br />
 <br />
 
-<img align="left" img src="images/Rgroup.gif" markdown="1" height="30" width="220" />
+<img align="left" img src="images/Rgroup.gif" />
+
+<br />
+<br />
 
 Please refer to this [link](https://manolo20.github.io/uottawa_presentation/shiny_manual.html) to see the presentation.
 
