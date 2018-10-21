@@ -10,6 +10,8 @@
 <br />
 <br />
 
+<img align="left" img src="images/Rgroup.gif" markdown="1" height="30" width="220" />
+
 Please refer to this [link](https://manolo20.github.io/uottawa_presentation/shiny_manual.html) to see the presentation.
 
 The dashboards of this presentation show monthly GDP (Gross Domestic Product) figures at the national level for all NAICS (North American Industry Classification) industries. 
