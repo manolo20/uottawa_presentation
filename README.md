@@ -10,10 +10,7 @@
 <br />
 <br />
 
-<img align="left" img src="images/Rgroup.gif" />
 
-<br />
-<br />
 
 Please refer to this [link](https://manolo20.github.io/uottawa_presentation/shiny_manual.html) to see the presentation.
 
@@ -25,3 +22,7 @@ The dashboards of this presentation show monthly GDP (Gross Domestic Product) fi
 
 - [shiny3.R](https://github.com/manolo20/uottawa_presentation/blob/master/shiny3.R) contains a dropdown menu that allows users select a specific industry which outputs a hover plot.
 
+<img align="left" img src="images/Rgroup.gif" />
+
+<br />
+<br />
