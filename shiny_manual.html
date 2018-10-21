@@ -463,7 +463,7 @@ ui &lt;- fluidPage(
   )
 )
 
-# Define server logic required to draw a histogram ----
+# Define a server function  ----
 server &lt;- function(input, output) {
   
   })
@@ -494,7 +494,7 @@ ui &lt;- fluidPage(
                   label = &quot;Select an industry:&quot;,
                   choices = unique(gdp$naics)), 
       
-      # Input: radioButtons allows users to choose a price measure ----
+      # Input: radioButtons allows users to choose a specific price measure ----
       radioButtons(inputId = &quot;prices&quot;,
                    label = &quot;Select price measure:&quot;,
                    choices = unique(gdp$prices))
@@ -516,12 +516,16 @@ ui &lt;- fluidPage(
 server &lt;- function(input, output) {
   
 
-  # This expression will generate a plot that is wrapped in a call
+  # Plot of the monthly GDP ----
+  # After users choose a:
+  # - specific industry in the dropdown menu
+  # - specific price measurement
+  # 
+  # The server will generate a line chart which is wrapped in a call
   # to renderPlot to indicate that:
   #
   # 1. It is &quot;reactive&quot; and therefore should be automatically
-  #    re-executed when inputs from the ui change
-  #
+  #    re-executed when inputs (input$industry and input$price) change
   # 2. Its output type is a plot
   
   

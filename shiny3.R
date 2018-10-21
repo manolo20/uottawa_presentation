@@ -35,7 +35,7 @@ gdp$time1<-as.Date(gdp$time1)
 head(gdp)
 
 
-# Define UI for app that draws a histogram ----
+# Define UI for app that draws a line chart  ----
 ui <- fluidPage(
   
   # App title ----
@@ -47,7 +47,8 @@ ui <- fluidPage(
     # Sidebar panel for inputs ----
     sidebarPanel(
       
-      # Input: Slider for the number of bins ----
+      # Input: Dropdown menu that allows users to select a specific industry and
+      #        a specific price measure ----
       selectInput(inputId = "industry",
                   label = "Select an industry:",
                   choices = unique(gdp$naics), multiple= TRUE), #
@@ -57,11 +58,11 @@ ui <- fluidPage(
       
     ),
     
-    # Main panel for displaying outputs ----
+    # Output: Line chart ----
     mainPanel(
       
       # Output: Histogram ----
-      plotlyOutput("plot1", height = "800px", width = "700px")
+      plotlyOutput("plot1", height = "400px", width = "400px")
       # plotOutput(outputId = "plot2", height = "800px", width = "700px")
       
       
@@ -69,18 +70,22 @@ ui <- fluidPage(
   )
 )
 
-# Define server logic required to draw a histogram ----
+# Define server logic required to draw a line chart ---- ----
 server <- function(input, output) {
   
- 
-  # Histogram of the Old Faithful Geyser Data ----
-  # with requested number of bins
-  # This expression that generates a histogram is wrapped in a call
+  # Plot of the monthly GDP ----
+  # After users choose a:
+  # - specific industry in the dropdown menu
+  # - specific price measurement
+  # 
+  # The server will generate a line chart which is wrapped in a call
   # to renderPlot to indicate that:
   #
   # 1. It is "reactive" and therefore should be automatically
-  #    re-executed when inputs (input$bins) change
+  #    re-executed when inputs (input$industry and input$price) change
   # 2. Its output type is a plot
+  
+  
   output$plot1 <- renderPlotly({
     
     dat <- gdp %>%
